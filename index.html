@@ -17,7 +17,7 @@
 <body>
 <header class="topbar"><div class="wrap nav">
 <a class="brand" href="#home"><span class="logo">⌬</span><span>Semiconductor<br><small style="font-weight:600;color:var(--muted)">Career Compass</small></span></a>
-<nav class="navlinks" id="navlinks"><a href="#academy">Academy</a><a href="#domains">Career domains</a><a href="#roadmap">Roadmap builder</a><a href="#resources">Resources</a><a href="#projects">Projects</a><a href="#interviews">Interview prep</a><a href="#dashboard">Dashboard</a></nav>
+<nav class="navlinks" id="navlinks"><a href="#academy">Academy</a><a href="#gate-prep">GATE Prep</a><a href="#domains">Career domains</a><a href="#roadmap">Roadmap builder</a><a href="#resources">Resources</a><a href="#projects">Projects</a><a href="#interviews">Interview prep</a><a href="#dashboard">Dashboard</a></nav>
 <div class="navactions"><button class="btn small" id="themeBtn" aria-label="Toggle theme">◐ <span class="themeText">Theme</span></button><button class="btn small menuBtn" id="menuBtn" aria-label="Open navigation">☰</button></div>
 </div></header>
 <main>
@@ -25,6 +25,36 @@
 <div class="chipArt" aria-label="Illustration of a semiconductor chip"><div class="floatTag t1">↗ RTL → Silicon</div><div class="chip"><i class="pin p1"></i><i class="pin p2"></i><i class="pin p3"></i><i class="pin p4"></i><i class="pin p5"></i><i class="pin p6"></i><div class="chipCore"><small>SEMICONDUCTOR</small><b>Si</b><span>DESIGN • VERIFY • BUILD</span></div></div><div class="floatTag t2">✦ Learn by building</div></div></div></section>
 <section class="section alt"><div class="wrap"><div class="sectionHead"><div><div class="kicker">The big picture</div><h2>How an idea becomes a chip</h2><p class="sub">Explore the major stages. Real project sequences can overlap and loop back as teams debug and optimize.</p></div></div><div class="flow" id="mainFlow"></div><div class="callout" id="flowInfo"><b>Choose a stage above</b><p class="muted" style="margin:4px 0 0">Each stage has different inputs, outputs, skills and specialist roles.</p></div></div></section>
 <section class="section" id="academy"><div class="wrap"><div class="sectionHead"><div><div class="kicker">Semiconductor fundamentals academy</div><h2>Start with the foundations</h2><p class="sub">Build a strong mental model before moving into specialist tools and flows. Select a topic to see a concise lesson and check your understanding.</p></div></div><div class="grid" id="lessonGrid"></div></div></section>
+<section class="section alt" id="gate-prep"><div class="wrap">
+<div class="sectionHead"><div><div class="kicker">GATE 2027 preparation hub</div><h2>Prepare strategically for GATE</h2><p class="sub">A structured study approach for students: understand the syllabus, build concepts, solve previous-year questions, revise repeatedly and learn from mock tests. This section is a planning guide; verify your paper syllabus and exam updates from official GATE sources.</p></div><a class="btn primary" href="https://sites.google.com/view/gate-preparation-2027/gate-2027" target="_blank" rel="noopener noreferrer">Open GATE Preparation 2027 ↗</a></div>
+<div class="grid three">
+<div class="card"><div class="iconBox">01</div><h3>Start with a syllabus map</h3><p>Download the syllabus for your chosen paper and turn every topic into a checklist. Mark topics as strong, partial or not started.</p><span class="tag">Day 1 setup</span></div>
+<div class="card"><div class="iconBox">02</div><h3>Learn, solve, review</h3><p>Study one concept at a time, solve worked examples, then attempt previous-year questions without looking at solutions.</p><span class="tag">Daily cycle</span></div>
+<div class="card"><div class="iconBox">03</div><h3>Revise with evidence</h3><p>Keep an error log for wrong answers, guessed answers and slow questions. Revisit those topics before taking another test.</p><span class="tag">Every week</span></div>
+</div>
+<div class="grid two" style="margin-top:16px">
+<div class="card"><h3>Recommended study cycle</h3>
+<div class="week"><h4>Concept learning</h4><p>Understand definitions, derivations, assumptions and core formulas. Write short notes in your own words.</p></div>
+<div class="week"><h4>Topic practice</h4><p>Solve basic questions first, then previous-year GATE questions. Tag each mistake by concept, calculation or time pressure.</p></div>
+<div class="week"><h4>Revision</h4><p>Use active recall and spaced revision: revisit yesterday's topics, this week's topics and older weak areas.</p></div>
+<div class="week"><h4>Test and analyze</h4><p>Take timed topic tests, then full-length mocks when enough syllabus is covered. Spend time analyzing each mock, not just checking the score.</p></div>
+</div>
+<div class="card"><h3>Illustrative 12-week plan for GATE EC / ECE</h3><p class="smallText">Adjust the order and duration to your current level and the official syllabus for your paper.</p>
+<div class="week"><h4>Weeks 1–2 · Foundation</h4><p>Engineering Mathematics, General Aptitude, and network theory basics.</p></div>
+<div class="week"><h4>Weeks 3–4 · Signals and systems</h4><p>Signals, systems, transforms and core problem-solving patterns.</p></div>
+<div class="week"><h4>Weeks 5–6 · Devices and analog</h4><p>Electronic devices, diode/BJT/MOSFET concepts and analog circuits.</p></div>
+<div class="week"><h4>Weeks 7–8 · Digital and control</h4><p>Digital logic, sequential circuits, control-system fundamentals and numericals.</p></div>
+<div class="week"><h4>Weeks 9–10 · Communications and EM</h4><p>Communication systems and electromagnetics; solve topic-wise previous-year questions.</p></div>
+<div class="week"><h4>Weeks 11–12 · Consolidation</h4><p>Mixed practice, formula revision, timed mocks and systematic error correction.</p></div>
+</div></div>
+<div class="grid two" style="margin-top:16px">
+<div class="card"><h3>GATE preparation checklist</h3><p class="muted">Tick items as you complete them. Your progress is saved in this browser.</p><div id="gateChecklist"></div><div class="progressMeta"><span>Preparation progress</span><span id="gateProgressText">0%</span></div><div class="progressTrack"><span id="gateProgressBar"></span></div></div>
+<div class="card"><h3>Weekly time strategy</h3><p>Use a repeatable routine instead of trying to study every subject every day.</p>
+<ul class="muted"><li><b>60%</b> of study time: concepts and topic-wise problem solving.</li><li><b>20%</b>: previous-year questions and timed practice.</li><li><b>20%</b>: revision, formula recall and error-log review.</li></ul>
+<p class="smallText">These percentages are a suggested starting point, not an official GATE rule. Adjust them based on your weak areas and available time.</p>
+<a class="btn" href="https://gate2027.iitm.ac.in/" target="_blank" rel="noopener noreferrer">Check official GATE updates ↗</a>
+</div></div>
+</div></section>
 <section class="section alt" id="domains"><div class="wrap"><div class="sectionHead"><div><div class="kicker">Career domain explorer</div><h2>Find a path that fits your strengths</h2><p class="sub">There is no universally best domain. Compare the work, prerequisites, tools and project ideas, then explore the details.</p></div></div><div class="toolbar"><input class="field search" id="domainSearch" placeholder="Search domains, skills, tools…"><select class="field" id="domainFilter"><option value="all">All domains</option><option>Design & verification</option><option>Implementation & signoff</option><option>Analog & hardware</option><option>Manufacturing & test</option><option>Tools & integration</option></select></div><div class="grid" id="domainGrid"></div></div></section>
 <section class="section" id="roadmap"><div class="wrap"><div class="sectionHead"><div><div class="kicker">Personalized learning plan</div><h2>Build your career roadmap</h2><p class="sub">Choose your current stage, interest and time budget. This creates a practical plan from embedded guidance — no account required.</p></div></div><div class="roadmapGrid"><form class="card" id="roadmapForm"><label class="smallText" for="year">Current stage</label><select class="field" id="year" style="width:100%;margin:5px 0 13px"><option>First year</option><option>Second year</option><option>Third year</option><option>Final year</option><option>Graduate / fresher</option></select><label class="smallText" for="branch">Engineering branch</label><select class="field" id="branch" style="width:100%;margin:5px 0 13px"><option>ECE</option><option>EEE</option><option>EIE</option><option>CSE</option><option>Other</option></select><label class="smallText" for="level">Current knowledge</label><select class="field" id="level" style="width:100%;margin:5px 0 13px"><option>Beginner</option><option>Some fundamentals</option><option>Already building projects</option></select><label class="smallText" for="interest">Preferred interest</label><select class="field" id="interest" style="width:100%;margin:5px 0 13px"><option value="Digital design">Coding and digital logic</option><option value="Design verification">Debugging and testing</option><option value="Physical design">Chip layout and timing</option><option value="Analog design">Circuits and mathematics</option><option value="DFT">Hardware testing</option><option value="Process engineering">Manufacturing and devices</option><option value="EDA / CAD">Automation and scripting</option><option value="FPGA">Hardware prototyping</option></select><label class="smallText" for="hours">Daily study time</label><select class="field" id="hours" style="width:100%;margin:5px 0 13px"><option>30–60 minutes</option><option>1–2 hours</option><option>2–3 hours</option><option>3+ hours</option></select><label class="smallText" for="duration">Roadmap length</label><select class="field" id="duration" style="width:100%;margin:5px 0 18px"><option value="30">30-day orientation</option><option value="90" selected>90-day foundation</option><option value="180">180-day job preparation</option></select><button class="btn primary" type="submit" style="width:100%">Generate my roadmap ↗</button><p class="smallText">Plans are illustrative, not guarantees of job readiness or employment.</p></form><div class="card roadmapOutput" id="roadmapOutput"><div class="iconBox">✦</div><h3>Your plan will appear here</h3><p class="muted">Choose your preferences and select “Generate my roadmap”. Your checklist progress can be saved in this browser.</p></div></div></div></section>
 <section class="section alt" id="projects"><div class="wrap"><div class="sectionHead"><div><div class="kicker">Project-based learning lab</div><h2>Turn concepts into evidence</h2><p class="sub">Projects are most valuable when you can explain the design, show tests, document trade-offs and be honest about what you implemented.</p></div></div><div class="toolbar"><input class="field search" id="projectSearch" placeholder="Search projects…"><select class="field" id="projectLevel"><option value="all">All levels</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div><div class="grid" id="projectGrid"></div></div></section>
@@ -42,7 +72,7 @@
 "use strict";
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const storeKey="semiconductorCareerCompass_v1";
-const defaultState={theme:"light",completedLessons:[],completedTasks:[],bookmarks:[],checks:{},roadmap:null,lastActivity:"Just getting started",quizBest:0};
+const defaultState={theme:"light",completedLessons:[],completedTasks:[],bookmarks:[],checks:{},roadmap:null,lastActivity:"Just getting started",quizBest:0,gateChecks:{}};
 let state;
 try{state={...defaultState,...JSON.parse(localStorage.getItem(storeKey)||"{}")}}catch(e){state={...defaultState}}
 function save(){try{localStorage.setItem(storeKey,JSON.stringify(state))}catch(e){toast("Browser storage is unavailable; progress may not persist.")}updateDashboard()}
@@ -200,15 +230,35 @@ const baseTasks=["Understand semiconductor vs conductor vs insulator","Explain P
 function renderDashboardChecklist(){let tasks=[...baseTasks,...(state.projectTasks||[])];$("#dashboardChecklist").innerHTML=tasks.map((t,i)=>{let id="dash-"+i;let checked=(state.completedTasks||[]).includes(id);return `<label class="checkrow"><input type="checkbox" data-dash="${id}" ${checked?"checked":""}><span>${esc(t)}</span></label>`}).join("");$$("[data-dash]").forEach(c=>c.onchange=()=>{if(!state.completedTasks)state.completedTasks=[];if(c.checked&&!state.completedTasks.includes(c.dataset.dash))state.completedTasks.push(c.dataset.dash);else state.completedTasks=state.completedTasks.filter(x=>x!==c.dataset.dash);markActivity("Updated learning checklist")})}
 function updateDashboard(){let lc=state.completedLessons.length,tc=(state.completedTasks||[]).length,taskTotal=baseTasks.length+(state.projectTasks||[]).length;$("#lessonCount").textContent=lc+"/"+lessons.length;$("#lessonBar").style.width=Math.min(100,lc/lessons.length*100)+"%";$("#taskCount").textContent=tc+"/"+taskTotal;$("#taskBar").style.width=Math.min(100,tc/taskTotal*100)+"%";$("#bookmarkCount").textContent=state.bookmarks.length;$("#lastActivity").textContent=state.lastActivity||"Just getting started"}
 $("#exportBtn").onclick=()=>{let blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="semiconductor-career-compass-progress.json";a.click();URL.revokeObjectURL(url);toast("Progress export created")};
-$("#importFile").onchange=async e=>{let f=e.target.files[0];if(!f)return;try{let d=JSON.parse(await f.text());if(!d||typeof d!=="object")throw Error("Invalid file");state={...defaultState,...d};save();initTheme();renderLessons();renderRoadmapTasks();renderDashboardChecklist();toast("Progress imported")}catch(err){toast("Could not import: please select a valid progress JSON file")}e.target.value=""};
-$("#resetBtn").onclick=()=>{if(confirm("Reset all locally saved learning progress, bookmarks and preferences? This cannot be undone unless you exported a backup.")){state={...defaultState};save();initTheme();renderLessons();renderDashboardChecklist();if(state.roadmap)renderRoadmapTasks();else $("#roadmapOutput").innerHTML='<h3>Your plan will appear here</h3><p class="muted">Generate a roadmap to begin.</p>';toast("Local progress reset")}};
+$("#importFile").onchange=async e=>{let f=e.target.files[0];if(!f)return;try{let d=JSON.parse(await f.text());if(!d||typeof d!=="object")throw Error("Invalid file");state={...defaultState,...d};save();initTheme();renderGateChecklist();renderLessons();renderRoadmapTasks();renderDashboardChecklist();toast("Progress imported")}catch(err){toast("Could not import: please select a valid progress JSON file")}e.target.value=""};
+$("#resetBtn").onclick=()=>{if(confirm("Reset all locally saved learning progress, bookmarks and preferences? This cannot be undone unless you exported a backup.")){state={...defaultState};save();initTheme();renderGateChecklist();renderLessons();renderDashboardChecklist();if(state.roadmap)renderRoadmapTasks();else $("#roadmapOutput").innerHTML='<h3>Your plan will appear here</h3><p class="muted">Generate a roadmap to begin.</p>';toast("Local progress reset")}};
 $("#printBtn").onclick=()=>window.print();
 function initTheme(){document.documentElement.dataset.theme=state.theme||"light";$("#themeBtn").innerHTML=(state.theme==="dark"?"☀":"◐")+' <span class="themeText">Theme</span>'}
 $("#themeBtn").onclick=()=>{state.theme=state.theme==="dark"?"light":"dark";initTheme();save()};
 $("#menuBtn").onclick=()=>$("#navlinks").classList.toggle("open");$("#navlinks").addEventListener("click",e=>{if(e.target.tagName==="A")$("#navlinks").classList.remove("open")});
 window.addEventListener("scroll",()=>$("#topBtn").classList.toggle("hidden",window.scrollY<450));$("#topBtn").onclick=()=>window.scrollTo({top:0,behavior:"smooth"});
 $("#yearNow").textContent=new Date().getFullYear();
-function init(){initTheme();renderLessons();renderDomains();renderProjects();renderResources();renderCompanies();renderGlossary();makeQuiz();renderDashboardChecklist();if(state.roadmap){$("#duration").value=String(state.roadmap.days);$("#interest").value=state.roadmap.interest;$("#year").value=state.roadmap.year;$("#branch").value=state.roadmap.branch;$("#level").value=state.roadmap.level;$("#hours").value=state.roadmap.hours;makeRoadmap()}updateDashboard();showFlow(0)}
+const gateTasks=[
+"Choose the GATE paper and save the official syllabus",
+"Take a diagnostic test and identify weak topics",
+"Create a realistic weekly timetable",
+"Complete the first topic and solve its previous-year questions",
+"Maintain and review a formula / short-notes sheet",
+"Update an error log after practice tests",
+"Complete one topic-wise timed test",
+"Revise older topics using active recall",
+"Attempt a full-length mock under timed conditions",
+"Analyze mock-test errors and plan the next revision"
+];
+function renderGateChecklist(){
+ const root=$("#gateChecklist"); if(!root)return;
+ const checks=state.gateChecks||{};
+ root.innerHTML=gateTasks.map((task,i)=>`<label class="checkrow"><input type="checkbox" data-gate-task="${i}" ${checks[i]?"checked":""}><span>${esc(task)}</span></label>`).join("");
+ const update=()=>{const done=gateTasks.filter((_,i)=>!!(state.gateChecks||{})[i]).length;const pct=Math.round(done/gateTasks.length*100);$("#gateProgressText").textContent=pct+"% ("+done+"/"+gateTasks.length+")";$("#gateProgressBar").style.width=pct+"%"};
+ root.querySelectorAll("[data-gate-task]").forEach(c=>c.onchange=()=>{if(!state.gateChecks)state.gateChecks={};state.gateChecks[c.dataset.gateTask]=c.checked;state.lastActivity="Updated GATE preparation checklist";save();update()});
+ update();
+}
+function init(){initTheme();renderGateChecklist();renderLessons();renderDomains();renderProjects();renderResources();renderCompanies();renderGlossary();makeQuiz();renderDashboardChecklist();if(state.roadmap){$("#duration").value=String(state.roadmap.days);$("#interest").value=state.roadmap.interest;$("#year").value=state.roadmap.year;$("#branch").value=state.roadmap.branch;$("#level").value=state.roadmap.level;$("#hours").value=state.roadmap.hours;makeRoadmap()}updateDashboard();showFlow(0)}
 init();
 </script>
 </body></html>
